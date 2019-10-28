@@ -1,5 +1,3 @@
-MIT License
-
 Copyright (c) 2019 David Ditter, Signal Processing (SP), Universität Hamburg
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -11,6 +9,8 @@ furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
+Whenever you use this code for any experiments and/or publications you need to cite our original paper [1].
+[1] D. Ditter and T. Gerkmann, “A Multi-Phase Gammatone Filterbank for Speech Separation via TasNet”, arXiv preprint arXiv:1910.11615, Oct. 2019. Available: https://arxiv.org/abs/1910.11615
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,

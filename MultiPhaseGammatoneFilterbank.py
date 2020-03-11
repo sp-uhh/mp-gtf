@@ -34,7 +34,8 @@ def gammatoneImpulseResponse(samplerateHz, lengthInSeconds, centerFreqHz, phaseS
     # Generate single parametrized gammatone filter
     p = 2 # filter order
     erb = 24.7 + 0.108*centerFreqHz # equivalent rectangular bandwidth
-    b = erb/1.02 # bandwidth parameter
+    divisor = (np.pi * np.math.factorial(2*p-2) * np.power(2, float(-(2*p-2))) )/ np.square(np.math.factorial(p-1))
+    b = erb/divisor # bandwidth parameter
     a = 1.0 # amplitude. This is varied later by the normalization process.
     L = int(np.floor(samplerateHz*lengthInSeconds))
     t = np.linspace(1./samplerateHz, lengthInSeconds, L)
@@ -45,8 +46,8 @@ def gammatoneImpulseResponse(samplerateHz, lengthInSeconds, centerFreqHz, phaseS
 
 def generateMPGTF(samplerateHz, lengthInSeconds, N):
     # Set parameters
-    centerFreqHzMin = 500
-    nCenterFreqs = 17
+    centerFreqHzMin = 100
+    nCenterFreqs = 24
     L = int(np.floor(samplerateHz*lengthInSeconds))
 
     # Initialize variables

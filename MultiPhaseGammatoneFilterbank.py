@@ -1,8 +1,9 @@
 ### This Python script generates the Multi-Phase Gammatone Filterbank as described in [1]
 #    for usage with Conv-TasNet
 #
-#    [1] D. Ditter and T. Gerkmann, “A Multi-Phase Gammatone Filterbank for Speech 
-#        Separation via TasNet”, arXiv preprint arXiv:1910.11615, Oct. 2019. 
+#    [1] David Ditter, Timo Gerkmann, "A Multi-Phase Gammatone Filterbank for Speech 
+#        Separation via TasNet",  IEEE Int. Conf. Acoust., Speech, Signal Process. (ICASSP),
+#        Barcelona, Spain, May 2020.
 #        Available: https://arxiv.org/abs/1910.11615
 
 import numpy as np
